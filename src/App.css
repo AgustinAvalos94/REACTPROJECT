@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,400&display=swap");
+
 .App {
   text-align: center;
 }
@@ -35,4 +38,74 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+
+a {
+  font-family: "Roboto", sans-serif;
+  text-shadow: 4px 4px 2px rgba(174, 171, 171, 0.75);
+  font-style: italic;
+  padding: 0;
+  margin-top: 10px;
+}
+
+ul, li {
+  list-style: none;
+}
+
+nav {
+  background-color: rgba(7, 40, 129, 0.781);
+  position: sticky;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+nav ul li {
+  border: none;
+  padding: 10px 20px 10px 20px;
+  display: inline-block;
+  text-decoration: none;
+}
+nav ul li a {
+  display: inline-block;
+  position: relative;
+  color: whitesmoke;
+  text-decoration: none;
+}
+nav ul li a:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 4px;
+  bottom: 0;
+  left: 0;
+  background-color: whitesmoke;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+nav ul li a:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.logo {
+  height: 100px;
+  width: auto;
+  padding: 10px;
+}
+
+nav h1 {
+  font-family: "Roboto", sans-serif;
+  color:whitesmoke;
+  padding: 0;
+  margin-top: 10px;
+  font-size: 2.5em;
+  font-style: normal;
+  padding: 30px 0px 20px 20px;
 }
